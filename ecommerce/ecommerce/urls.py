@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from ecommerce.views import test, template2, list_template
+from products.views import create_product, list_products
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/', test, name="testing"),
     path('template/', template2, name="template"),
     path('list/', list_template, name="list"),
+    path('create_product/', create_product, name="create_product"),
+    path('list_products/', list_products, name="list_products"),
 ]
