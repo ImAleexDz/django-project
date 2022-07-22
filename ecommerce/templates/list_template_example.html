@@ -1,0 +1,16 @@
+{% for element in list %}
+
+    {% if element == 'banana' %}
+        <p style="color: coral;">{{element}}</p>
+
+        {% elif element == 'apple' %}
+
+        <p style="color: red;">{{element}}</p>
+
+        {% else %}
+
+        <p>{{element}}</p>
+        
+    {% endif %}
+
+{% endfor %}
