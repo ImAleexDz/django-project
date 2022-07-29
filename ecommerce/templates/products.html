@@ -1,4 +1,11 @@
+{% extends 'base.html' %}
 
-<h1>Nombre: {{new_product.name}}</h1>
-<h2>Precio: {{new_product.price}}</h2>
-<h2>Stock: {{new_product.stock}}</h2>
+{% block titulo %}
+    Producto
+{% endblock %}
+
+{% block contenido %}
+    <h1>Nombre: {{new_product.name}}</h1>
+    <h2>Precio: {{new_product.price}}</h2>
+    <h2>Stock: {{new_product.stock}}</h2>
+{% endblock %}

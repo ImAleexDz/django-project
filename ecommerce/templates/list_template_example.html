@@ -1,16 +1,24 @@
-{% for element in list %}
+{% extends 'base.html' %}
 
-    {% if element == 'banana' %}
-        <p style="color: coral;">{{element}}</p>
+{% block titulo %}
+    Productos
+{% endblock %}
 
-        {% elif element == 'apple' %}
+{% block contenido %}
+    {% for element in list %}
 
-        <p style="color: red;">{{element}}</p>
+        {% if element == 'banana' %}
+            <p style="color: coral;">{{element}}</p>
 
-        {% else %}
+            {% elif element == 'apple' %}
 
-        <p>{{element}}</p>
-        
-    {% endif %}
+            <p style="color: red;">{{element}}</p>
 
-{% endfor %}
+            {% else %}
+
+            <p>{{element}}</p>
+            
+        {% endif %}
+
+    {% endfor %}
+{% endblock %}
