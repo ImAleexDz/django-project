@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Primer Formulario
+{% endblock %}
+
+{% block contenido %}
+
+<div class="col-12 text-center">
+    <form action="" method="POST">
+
+        {% csrf_token %}
+    
+        <input type="text" name="usuario" placeholder="Usuario"/><br/><br/>
+    
+        <input type="text" name="contraseña" placeholder="Contraseña"/><br/><br/>
+    
+        <input type="submit" value="Enviar" />
+    </form>
+</div>
+    
+{% endblock %}
