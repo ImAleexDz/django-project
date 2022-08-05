@@ -13,7 +13,9 @@
                     <div class="card-body">
                     <h1 class="card-title">Name: {{element.name}}</h1>
                     <p class="card-text">Price: {{element.price}}</p>
-                    <a href="#" class="btn btn-primary">Stock: {{element.stock}}</a>
+                    <p class="card-text">Stock: {{element.stock}}</p>
+                    <a href="/products/update-product/{{element.id}}" class="btn btn-primary">Editar</a>
+                    <a href="/products/delete-product/{{element.id}}" class="btn btn-danger">Borrar</a>
                     </div>
                 </div>
                 </div>

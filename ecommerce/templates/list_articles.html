@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Lista de articulos
+{% endblock %}
+
+{% block contenido %}
+    <div class="container">
+        <div class="row">
+            {% for obj in object_list %}
+                <div class="col-xs-12 col-md-4">
+                    <h1>{{obj.title}}</h1>
+                    <h2>{{obj.description}}</h2>
+                    <a href="/blog/detail-article/{{obj.id}}/">Ver</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

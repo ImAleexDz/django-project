@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Eliminar articulo
+{% endblock %}
+
+{% block contenido %}
+
+<p>{{object.title}}</p>
+
+<h2>¿Estás seguro que deseal eliminarlo?</h2>
+
+<form method="POST">
+
+    {% csrf_token %}
+    <input type="submit" value="Eliminar" />
+</form>
+{% endblock %}
